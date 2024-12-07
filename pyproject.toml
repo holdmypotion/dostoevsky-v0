@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "poetry-video-generator"
+version = "0.1.0"
+description = "An AI-powered video generator that creates videos from poetry"
+authors = ["Rahul Sharma <holdmypotion@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+loguru = "^0.7.2"
+ollama = "^0.1.6"
+moviepy = "^1.0.3"
+pillow = "^10.2.0"
+torch = "^2.2.0"
+torchaudio = "^2.2.0"
+numpy = "^1.24.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.1.0"
+isort = "^5.13.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
